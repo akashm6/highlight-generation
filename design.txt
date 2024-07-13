@@ -1,0 +1,15 @@
+Things I want this code to do:
+
+- Take in a stream vod via a link
+- Go through the stream and make notes of stretches of time where 
+    - audio spikes
+    - chat messages per second meets a certain threshold
+- Turn these stretches of time into video clips
+- Create a montage of these clips
+Files Required:
+
+- authentification file (DONE)
+- file to take in a stream vod and download it
+- file that will take in downloaded stream vod (use os) and check for 15-30 second stretches where audio spikes or messages meet a threshold
+- file that will check for audio spikes and for increased chat messages
+- file that runs everything and puts everything into one big montage
