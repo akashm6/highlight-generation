@@ -7,7 +7,7 @@ def get_parameters():
         'client_id': f'XXX',
         'client_secret':  f'XXX',
         'grant_type': 'client_credentials'
-    }
+    } 
     auth_response = requests.post(token_url, params = parameters).json()
     access_token = auth_response['access_token']
     
