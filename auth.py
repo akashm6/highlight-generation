@@ -6,8 +6,8 @@ def get_parameters():
 
     # these parameters help authenticate that I am a valid user to get an access token to use the api
     parameters = {
-        'client_id': f'6bmu3qry44u053rex85jbp8bpuceqd',
-        'client_secret':  f't80m1fvw1b7lvzp16whyzuxbc8yffq',
+        'client_id': f'XXX',
+        'client_secret':  f'XXX',
         'grant_type': 'client_credentials'
     }
 
@@ -19,7 +19,7 @@ def get_parameters():
     
 
     return {
-        'client_id': f'6bmu3qry44u053rex85jbp8bpuceqd',
+        'client_id': f'XXX',
         'authorization': f'Bearer {access_token}'
     }
 
