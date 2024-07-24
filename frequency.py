@@ -1,7 +1,12 @@
 import csv
 import numpy as np
 
-def get_chat_frequency(chat_csv_path, segment_duration=30) -> str:
+def seconds_to_mmss(seconds):
+    minutes = seconds // 60
+    seconds = seconds % 60
+    return f"{minutes:02}:{seconds:02}"
+
+def get_chat_excitement(chat_csv_path, segment_duration=30) -> str:
 
     with open(chat_csv_path, newline='') as file:
         reader = csv.DictReader(file)
@@ -24,11 +29,12 @@ def get_chat_frequency(chat_csv_path, segment_duration=30) -> str:
                 break
 
     average_count = np.mean(message_counts)
-
     exciting_segments = []
     for i, count in enumerate(message_counts):
         if count >= average_count * 2:
-            exciting_segments.append((segments[i], segments[i + 1], count))
+            start_segment = seconds_to_mmss(segments[i])
+            end_segment = seconds_to_mmss(segments[i + 1])
+            exciting_segments.append((start_segment, end_segment, count))
 
     if exciting_segments:
         result = "Segments with message frequency meeting or exceeding the average:\n" + "\n".join(
@@ -38,4 +44,5 @@ def get_chat_frequency(chat_csv_path, segment_duration=30) -> str:
         result = "No segments met or exceeded the average message frequency."
 
     return result
+
 
