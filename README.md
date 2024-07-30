@@ -1,6 +1,6 @@
 # Highlight Generation
 
-Highlight Generation is a tool for Twitch streamers looking to automate the process of pinpoint exciting moments in their live streams. 
+Highlight Generation is a tool for Twitch streamers looking to automate the process of pinpointing exciting moments in their live streams. 
 
 By utilizing:
 * Selenium for automated chat data CSV retrieval
