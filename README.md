@@ -1,4 +1,4 @@
-# Highlight Generation <img src="]https://pngimg.com/uploads/twitch/twitch_PNG27.png" width="100" title="hover text">
+# Highlight Generation <img src="https://pngimg.com/uploads/twitch/twitch_PNG27.png" width="100" title="hover text">
 
 Highlight Generation is a tool for Twitch streamers looking to automate the process of pinpointing exciting moments in their live streams. 
 
