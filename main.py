@@ -8,13 +8,17 @@ from sentiment import analyze_sentiments, sentiment_over_time, plot_sentiment_ov
 def main():
     vod_url = str(input('Input the URL of the Twitch VOD you would like to analyze: '))
     print('Downloading VOD...')
+    
     vod_file = download_vod(vod_url).get('local_filename')
     output_file = str(input('Name your chat data file: '))
     print('Fetching chat data from the web...')
+    
     chat_path = download_chat_data(vod_url, output_file)
     print('Analyzing chat data and downloading clips...')
+    
     get_chat_excitement(chat_path, vod_file, './clips')
     print('Clips downloaded into \"clips\" directory!')
+    
     while True:
         response = str(input('Would you like sentiment data? Y/N: '))
         if response.lower() != 'y' and response.lower() != 'n':
