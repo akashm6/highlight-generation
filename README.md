@@ -17,7 +17,7 @@ link to their Twitch VOD.
 ## Demo
 
 ## Languages and Libaries Used
-* [Python] (https://www.python.org/)
+* [Python](https://www.python.org/)
 * NLTK/VADER
 * Selenium
 * NumPy
