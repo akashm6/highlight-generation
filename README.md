@@ -11,7 +11,7 @@ By utilizing:
 Highlight generation takes what is usually a fully manual process and speeds it up by simply asking the user to input a
 link to their Twitch VOD.
 
-## How it Works
+# How it Works
 * Locally downloads the input twitch VOD using a UUID unique ID via yt_dlp. 
 * Downloads chat data as a CSV utilizing Selenium to automate the web process of
   entering a stream link to [Twitch Chat Downloader](https://www.twitchchatdownloader.com/).
