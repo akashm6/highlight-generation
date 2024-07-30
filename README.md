@@ -17,7 +17,7 @@ link to their Twitch VOD.
   entering a stream link to [Twitch Chat Downloader](https://www.twitchchatdownloader.com/).
 * Analyzes chat message frequency through message times in order to determine when
   exciting moments happen in the stream (Threshold is 3.5X the normal stream average frequency).
-* Extracts 30 second clips surrounding periods of high chat activity and downloads them to a folder.
+* Extracts 30 second clips surrounding periods of high chat activity and locally downloads them to your machine.
 * Performs sentiment analysis using VADER lexicon analysis to report sentiment statistics and
   plots sentiment over time.
 
