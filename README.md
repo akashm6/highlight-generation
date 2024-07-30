@@ -25,7 +25,7 @@ link to their Twitch VOD.
 
 Coming Soon!
 
-## Languages and Libaries Used
+## Dependencies Applied
 * [Python](https://www.python.org/)
 * [NLTK/VADER](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
 * [Selenium](https://www.selenium.dev/)
