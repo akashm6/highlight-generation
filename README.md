@@ -23,6 +23,8 @@ link to their Twitch VOD.
 
 ## Demo
 
+Coming Soon!
+
 ## Languages and Libaries Used
 * [Python](https://www.python.org/)
 * [NLTK/VADER](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
