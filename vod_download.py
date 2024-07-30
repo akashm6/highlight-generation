@@ -4,11 +4,20 @@ import uuid
 """
 Downloads a twitch vod from a given url locally
 """
-def download_vod(vod_url):
+
+IDS = {}
+def download_vod(vod_url) -> dict:
     
-    #generates a unique file_id
     file_id = uuid.uuid4()
     local_filename = f"vod_{file_id}.mp4"
+    if vod_url not in IDS:
+        IDS[vod_url] = file_id
+    else:
+        print(f"Video already downloaded as {local_filename}")
+        return {
+        'local_filename': local_filename,
+        'vod_url': vod_url
+    }
     
     # params for download
     ydl_opts = {
@@ -21,5 +30,10 @@ def download_vod(vod_url):
 
     print(f"Video downloaded as {local_filename}")
 
-if __name__ == '__main__':
-    download_vod('https://www.twitch.tv/videos/917374678')
+    #returns the unique file name
+    return {
+        'local_filename': local_filename,
+        'vod_url': vod_url
+    }
+
+
