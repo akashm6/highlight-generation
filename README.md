@@ -1,4 +1,4 @@
-# Highlight Generation <img src="https://gamequitters.com/wp-content/uploads/twitch-logo-transparent.png" width="50" height = "50" title="hover text">
+# Highlight Generation <img src="https://gamequitters.com/wp-content/uploads/twitch-logo-transparent.png" width="50" height = "50" title="logo">
 
 Highlight Generation is a tool for Twitch streamers looking to automate the process of pinpointing exciting moments in their live streams. 
 
