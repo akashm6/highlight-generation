@@ -8,7 +8,7 @@ By utilizing:
 * NLTK/VADER for sentiment analysis
 * and yt_dlp for local vod/clip downloads,
 
-Highlight generation takes what is usually a fully manual process and speeds it up by simply asking the user to input a
+Highlight Generation takes what is usually a fully manual process and speeds it up by simply asking the user to input a
 link to their Twitch VOD.
 
 ## How it Works
